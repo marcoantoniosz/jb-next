@@ -3,7 +3,13 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import { FiSearch, FiUser } from "../assets/icons/vander";
+import {
+  FiSearch,
+  FiUser,
+  PiPiggyBank,
+  CiMapPin,
+  FaWhatsapp,
+} from "../assets/icons/vander";
 
 export default function Navbar({ navClass, logolight, menuClass }) {
   let [scroll, setScroll] = useState(false);
@@ -118,11 +124,39 @@ export default function Navbar({ navClass, logolight, menuClass }) {
   }
   return (
     <>
+      <div className="bg-primary gap-5 justify-content-center d-flex p-2">
+        <div className="d-flex align-items-center me-3">
+          <FaWhatsapp
+            style={{ width: "20px", height: "20px" }}
+            className="text-white icons"
+          />
+          <span className="text-white ms-2">(38) 9 9956-0500</span>
+        </div>
+        <div className="d-flex align-items-center me-3">
+          <CiMapPin
+            style={{ width: "20px", height: "20px" }}
+            className="text-white icons"
+          />
+          <span className="text-white ms-2">
+            Rua Santa Maria, 314 - Todos os Santos
+          </span>
+        </div>
+        <button
+          type="button"
+          className="btn d-flex align-items-center btn-light"
+        >
+          <PiPiggyBank
+            style={{ width: "20px", height: "20px" }}
+            className="text-primary icons"
+          />
+          <span className="ms-2 text-primary">2ª via boleto</span>
+        </button>
+      </div>
       <header
         id="topnav"
-        className={`${scroll ? "nav-sticky" : ""} ${navClass}`}
+        className={`${scroll ? "nav-sticky" : "my-5 p-2"} ${navClass}`}
       >
-        <div className="container">
+        <div className="d-flex align-items-center justify-content-center">
           {logolight === true ? (
             <Link className="logo" href="/">
               <span className="logo-light-mode">
@@ -185,58 +219,6 @@ export default function Navbar({ navClass, logolight, menuClass }) {
             </div>
           </div>
 
-          <ul className="buy-button list-inline mb-0">
-            <li className="list-inline-item ps-1 mb-0">
-              <div className="dropdown">
-                <button
-                  type="button"
-                  className="dropdown-toggle btn btn-sm btn-icon btn-pills btn-primary"
-                  onClick={() => setModal(!modal)}
-                >
-                  <FiSearch className="icons" />
-                </button>
-                <div
-                  className={`${
-                    modal === true ? "show" : ""
-                  } dropdown-menu dd-menu dropdown-menu-start bg-white rounded-3 border-0 mt-3 p-0 right-0`}
-                  style={{ width: "240px", right: "0" }}
-                >
-                  <div className="search-bar">
-                    <div id="itemSearch" className="menu-search mb-0">
-                      <form
-                        role="search"
-                        method="get"
-                        id="searchItemform"
-                        className="searchform"
-                      >
-                        <input
-                          type="text"
-                          className="form-control rounded-3 border"
-                          name="s"
-                          id="searchItem"
-                          placeholder="Search..."
-                        />
-                        <input
-                          type="submit"
-                          id="searchItemsubmit"
-                          value="Search"
-                        />
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li className="list-inline-item ps-1 mb-0">
-              <Link
-                href="/auth-login"
-                className="btn btn-sm btn-icon btn-pills btn-primary"
-              >
-                <FiUser className="icons" />
-              </Link>
-            </li>
-          </ul>
-
           <div id="navigation" style={{ display: isMenu ? "block" : "none" }}>
             <ul className={menuClass}>
               <li className="has-submenu parent-menu-item">
@@ -285,6 +267,59 @@ export default function Navbar({ navClass, logolight, menuClass }) {
               </li>
             </ul>
           </div>
+
+          <ul className="buy-button list-inline mb-0">
+            <li className="list-inline-item ps-1 mb-0">
+              <div className="dropdown">
+                <button
+                  type="button"
+                  className="dropdown-toggle btn btn-sm btn-icon btn-pills btn-primary"
+                  onClick={() => setModal(!modal)}
+                >
+                  <FiSearch className="icons" />
+                </button>
+                <div
+                  className={`${
+                    modal === true ? "show" : ""
+                  } dropdown-menu dd-menu dropdown-menu-start bg-white rounded-3 border-0 mt-3 p-0 right-0`}
+                  style={{ width: "240px", right: "0" }}
+                >
+                  <div className="search-bar">
+                    <div id="itemSearch" className="menu-search mb-0">
+                      <form
+                        role="search"
+                        method="get"
+                        id="searchItemform"
+                        className="searchform"
+                      >
+                        <input
+                          type="text"
+                          className="form-control rounded-3 border"
+                          name="s"
+                          id="searchItem"
+                          placeholder="Search..."
+                        />
+                        <input
+                          type="submit"
+                          id="searchItemsubmit"
+                          value="Search"
+                        />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li className="list-inline-item ps-1 mb-0">
+              <Link
+                href="/auth-login"
+                className="bg-primary p-2 rounded-3 text-white"
+              >
+                <FiUser className="icons me-2" />
+                <span>área do cliente</span>
+              </Link>
+            </li>
+          </ul>
         </div>
       </header>
     </>

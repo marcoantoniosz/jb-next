@@ -30,7 +30,7 @@ export default function AuthLogin() {
                     alt=""
                   />
                 </Link>
-                <h5 className="mb-3">Please sign in</h5>
+                <h5 className="mb-3">Área do cliente</h5>
 
                 <div className="form-floating mb-2">
                   <input
@@ -39,7 +39,7 @@ export default function AuthLogin() {
                     id="floatingInput"
                     placeholder="name@example.com"
                   />
-                  <label htmlFor="floatingInput">Email address</label>
+                  <label htmlFor="floatingInput">Email</label>
                 </div>
                 <div className="form-floating mb-3">
                   <input
@@ -48,7 +48,7 @@ export default function AuthLogin() {
                     id="floatingPassword"
                     placeholder="Password"
                   />
-                  <label htmlFor="floatingPassword">Password</label>
+                  <label htmlFor="floatingPassword">Senha</label>
                 </div>
 
                 <div className="d-flex justify-content-between">
@@ -64,28 +64,28 @@ export default function AuthLogin() {
                         className="form-check-label text-muted"
                         htmlFor="flexCheckDefault"
                       >
-                        Remember me
+                       Lembrar
                       </label>
                     </div>
                   </div>
                   <span className="forgot-pass text-muted mb-0">
                     <Link href="/auth-reset-password" className="text-muted">
-                      Forgot password ?
+                      Esqueceu a senha ?
                     </Link>
                   </span>
                 </div>
 
                 <button className="btn btn-primary w-100" type="submit">
-                  Sign in
+                  Entrar
                 </button>
 
                 <div className="col-12 text-center mt-3">
                   <span>
                     <span className="text-muted me-2">
-                      Dont have an account ?
+                      Ainda não possui uma conta ?
                     </span>{" "}
                     <Link href="/auth-signup" className="text-dark fw-medium">
-                      Sign Up
+                      Registre-se
                     </Link>
                   </span>
                 </div>

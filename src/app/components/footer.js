@@ -47,7 +47,7 @@ export default function Footer(){
                                 </div>
             
                                 <div className="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                                    <h5 className="footer-head">Detalhes de Contato</h5>
+                                    <h5 className="footer-head">Contatos</h5>
 
                                     <div className="d-flex mt-4">
                                         <FiMapPin className="fea icon-sm text-primary mt-1 text-white"/>
@@ -72,17 +72,6 @@ export default function Footer(){
                 </div>
             </div> 
 
-            <div className="footer-py-30 footer-bar">
-                <div className="container text-center">
-                    <div className="row">
-                        <div className="col">
-                            <div className="text-center">
-                                <p className="mb-0">© {new Date().getFullYear()}, JB Imóveis.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </footer>
         </>
     )

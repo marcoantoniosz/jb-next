@@ -1,0 +1,10 @@
+.carousel-item {
+  padding: 0 10px; /* Set this to desired gap amount */
+}
+
+.property-title {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -14,9 +14,9 @@ export default function FuaturedProperties(){
                 </div>
             </div>
                       <div>
-                        <ul className="nav bg-transparent nav-pills">
+                        <ul className="nav gap-3 bg-transparent nav-pills">
                           <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Compra</a>
+                            <a className="nav-link  active" aria-current="page" href="#">Compra</a>
                           </li>
                           <li className="nav-item">
                             <a className="nav-link" href="#">Aluguel</a>

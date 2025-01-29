@@ -131,7 +131,7 @@ export default function SelectThree() {
                           name="search"
                           style={{ height: "48px" }}
                           className="btn btn-primary searchbtn w-100"
-                          value="Search"
+                          value="Buscar"
                         />
                       </div>
                     </div>
@@ -213,7 +213,7 @@ export default function SelectThree() {
                           name="search"
                           style={{ height: "48px" }}
                           className="btn btn-primary searchbtn w-100"
-                          value="Search"
+                          value="Buscar"
                         />
                       </div>
                     </div>
@@ -230,7 +230,7 @@ export default function SelectThree() {
                     <div className="row g-lg-0">
                       <div className="col-lg-3 col-md-6 col-12">
                         <div className="mb-3">
-                          <label className="form-label fs-6">Search :</label>
+                          <label className="form-label fs-6">Buscar :</label>
                           <div className="filter-search-form position-relative filter-border">
                             <FiSearch className="fea icon-ex-md icons" />
                             <input

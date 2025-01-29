@@ -11,8 +11,7 @@ export default function PropertyTwo(){
             <div className="row justify-content-center">
                 <div className="col">
                     <div className="section-title text-center mb-4 pb-2">
-                        <h4 className="title mb-3">Featured Properties</h4>
-                        <p className="text-muted para-desc mb-0 mx-auto">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
+                        <h4 className="title mb-3">Imóveis em destaque</h4>
                     </div>
                 </div>
             </div>
@@ -77,7 +76,7 @@ export default function PropertyTwo(){
                 
                 <div className="col-12 mt-4 pt-2">
                     <div className="text-center">
-                        <Link href="/list" className="mt-3 fs-6 text-primary">View More Properties <i className="mdi mdi-arrow-right align-middle"></i></Link>
+                        <Link href="/list" className="mt-3 fs-6 text-primary">Ver mais<i className="mdi mdi-arrow-right align-middle"></i></Link>
                     </div>
                 </div>
             </div>

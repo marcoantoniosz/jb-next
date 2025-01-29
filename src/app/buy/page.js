@@ -18,8 +18,8 @@ export default function Buy(){
                 <div className="row mt-5 justify-content-center">
                     <div className="col-12">
                         <div className="title-heading text-center">
-                            <p className="text-white-50 para-desc mx-auto mb-0">Buy Property</p>
-                            <h5 className="heading fw-semibold mb-0 sub-heading text-white title-dark">Find Your Dream Home</h5>
+                            <p className="text-white-50 para-desc mx-auto mb-0">Deseja comprar?</p>
+                            <h5 className="heading fw-semibold mb-0 sub-heading text-white title-dark">Encontre a sua casa dos sonhos</h5>
                         </div>
                     </div>
                 </div>
@@ -42,8 +42,8 @@ export default function Buy(){
                                     <div className="text-center subscribe-form">
                                         <form style={{maxWidth:'800px'}}>
                                             <div className="mb-0">
-                                                <input type="text" id="help" name="name" className="border shadow rounded-3 bg-white" required="" placeholder="City, Address, Zip"/>
-                                                <button type="submit" className="btn btn-primary rounded-3">Search</button>
+                                                <input type="text" id="help" name="name" className="border shadow rounded-3 bg-white" required="" placeholder="Características, bairro, código ou cep"/>
+                                                <button type="submit" className="btn btn-primary rounded-3">Procurar</button>
                                             </div>
                                         </form>
                                     </div>

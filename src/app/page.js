@@ -5,7 +5,6 @@ import Image from "next/image";
 import Navbar from "./components/navbar";
 import FeaturedProperties from "./components/featuredProperties";
 import ClientOne from "./components/clientOne";
-import Broker from "./components/broker";
 import AboutUs from "./components/about";
 import GetInTuch from "./components/getInTuch";
 import Footer from "./components/footer";
@@ -15,10 +14,9 @@ import TextAnimation from "./components/textAnimation";
 import ScrollTop from "./components/scrollTop";
 import Categories from "./components/categories";
 
+import PropertiesPage from "./components/p";
+
 export default function Home() {
-
-
-
   return (
     <>
       <Navbar
@@ -60,24 +58,21 @@ export default function Home() {
       {/* Hero Start */}
 
       <section className="section pt-5">
-
         {/* Filters */}
         <div className="container">
           <SelectThree />
         </div>
         {/* Filters */}
 
-        {/* Section 4 - Featured */}
-        <div className="container mt-100"> 
-          <FeaturedProperties />
-        </div> 
-        {/* Section 4 - Featured */} 
+        <div className="container mt-100 mt-60">
+          <PropertiesPage />
+        </div>
 
         {/* Section 2 - Categories */}
         <div className="container mt-100 mt-60">
           <Categories />
         </div>
-        {/* Section 2 - Categories */} 
+        {/* Section 2 - Categories */}
 
         {/* Section 1 - Blog */}
         <div className="container mt-100 mt-60">
@@ -137,13 +132,12 @@ export default function Home() {
                 </h4>
                 <p className="text-muted para-desc mb-0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus at nisi sit amet erat pretium posuere.{" "} 
+                  Phasellus at nisi sit amet erat pretium posuere.{" "}
                 </p>
 
                 <div className="mt-4">
                   <Link href="/aboutus" className="btn btn-pills btn-primary">
-                    Leia{" "}
-                    <i className="mdi mdi-arrow-right align-middle"></i>
+                    Leia <i className="mdi mdi-arrow-right align-middle"></i>
                   </Link>
                 </div>
               </div>
@@ -152,13 +146,11 @@ export default function Home() {
         </div>
         {/* Section 1 - Blog */}
 
-
         {/* Section 3 - HIW */}
         <div className="container mt-100 mt-60">
           <AboutUs />
         </div>
         {/* Section 3 - HIW */}
-
 
         {/* Section 5 - Feedbacks */}
         <div className="container mt-100 mt-60">
@@ -166,14 +158,11 @@ export default function Home() {
         </div>
         {/* Section 5 - Feedbacks */}
 
-
         {/* Section 7 - Get In Touch */}
         <div className="container mt-100 mt-60">
           <GetInTuch />
         </div>
         {/* Section 7 - Get In Touch */}
-
-
       </section>
       <Footer />
       <ScrollTop />
